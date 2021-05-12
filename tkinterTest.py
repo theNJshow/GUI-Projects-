@@ -12,6 +12,11 @@ def exportList ():
     with open('tst.txt', 'w') as f:
         for item in list:
          f.write("is/n" item)
+
+def clearWindow():
+    for widgets in top.winfo_children():
+        widgets.destroy()
+        
 def mainMenu():
     clearWindow()
     LMain = Label(top, text = "Block 5 GUI Projects")
@@ -20,13 +25,11 @@ def mainMenu():
     B1Main.grid(column= 0, row = 2)
     B2Main = Button(text = "Week2", bg = "white")
     B2Main.grid(column= 0, row = 3)
-    B3Main = Button(text = "week3", bg = "white
-
-
-
+    B3Main = Button(text = "week3", bg = "white")
+    B3Main.grid(column= 0, row= 4)
 
 def week1():
-
+    clearWindow[]
     def results():
         result = E1.get()
         playlist.append(result)
@@ -46,6 +49,12 @@ def week1():
 
     B2 = Button(text= " print ", bg = "Light blue" command= results)
     B2.grid(column= 2, row= 2)
+
+    B3 = Button(text= "Export List", bg = "purple", command = exportList)
+    B3.grid(column = 0, row = 3)
+
+    Bexit = Button(text= "Main Menu", bg = "sunshine yellow", command = mainMenu)
+    Bexit.grid(column = 1, row = 3)
 
 def week2():
     clearWindow()
