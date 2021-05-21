@@ -97,7 +97,21 @@ def week2():
     E2Week2 = Entry(top, bd = 5)
     E2Week2.grid(column= 3, row=3)
 
-    
+
+
+
+def week3():
+
+B3 = linearlist(text= "hello lets make a list")
+
+
+        #the new code
+        import linearlist
+        print("hello! lets make a list!")
+        print("""1. Add some words,
+2. Return some words
+3. print contents of list  """) 
+        
 if __name__ == "__main__":
     mainMenu()
     top.mainloop()
